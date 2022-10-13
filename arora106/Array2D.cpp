@@ -113,6 +113,9 @@ Array2D& Array2D::operator= ( const Array2D& array ){
 
 
 Array2D::~Array2D(){
+   // delete numRows;
+   // delete numCols;
+   deleteAry(ary);
 
 }
 
