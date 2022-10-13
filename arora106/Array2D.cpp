@@ -75,10 +75,7 @@ Array2D Array2D::operator*( const Array2D& array ){
       return arr;
    }
    else{
-      Array2D arr(numRows, array.getNumCols(), 'c');
-
-
-
+      Array2D arr(numRows, array.getNumCols(), 0);
       for(int i = 0; i < numRows; ++i){
         for(int j = 0; j < array.getNumCols(); ++j){
             for(int k = 0; k < array.getNumRows(); ++k)
