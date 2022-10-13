@@ -104,13 +104,16 @@ bool Array2D::operator==( const Array2D& array ){
 Array2D& Array2D::operator= ( const Array2D& array ){
    if (!sameSize(array)){
       deleteAry(ary);
-      ary = new int*[numRows];
-      for (int i = 0; i < numRows; i++) {
-      ary[i] = new int[numCols];
-      for (int j = 0; j < numCols; j++) {
+      ary = new int*[array.getNumRows()];
+      for (int i = 0; i < array.getNumRows(); i++) {
+      ary[i] = new int[array.getNumCols()];
+      for (int j = 0; j < array.getNumRows(); j++) {
             ary[i][j] = -1;
       }
+      numCols = array.getNumCols();
+      numRows = array.getNumRows();
    }
+
    }
    for (int i = 0; i < numRows; i++) {
       for (int j = 0; j < numCols; j++) {
