@@ -109,7 +109,7 @@ Array2D& Array2D::operator= ( const Array2D& array ){
       ary = new int*[array.getNumRows()];
       for (int i = 0; i < array.getNumRows(); i++) {
          ary[i] = new int[array.getNumCols()];
-         for (int j = 0; j < array.getNumRows(); j++) {
+         for (int j = 0; j < array.getNumCols(); j++) {
             ary[i][j] = -1;
       }
 
