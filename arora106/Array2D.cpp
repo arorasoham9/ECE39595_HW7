@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include "Array2D.H"
+#include "Array2D.h"
 
 // This constructor is delegated to by other constructors and does all of the 
 // allocation, showing an example of a delegating constructor..  
